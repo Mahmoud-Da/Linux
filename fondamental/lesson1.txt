@@ -1,0 +1,236 @@
+Terms:
+directory => folder
+
+1- ls:
+list directories and files
+ex:
+$ ls
+lesson1         summary.txt     test
+
+*ls -a
+show all the files and directories even the hidden
+ex:
+$ ls -a
+.               lesson1         test
+..              summary.txt
+
+List files and directories with detailed information:
+ls -l
+
+List files with detailed information, including hidden ones:
+ls -la
+
+List files with detailed information, including hidden ones:
+
+ls -la
+
+
+Sorting and Formatting:
+List files sorted by modification time:
+ls -lt
+
+List files sorted by size:
+ls -lS
+
+
+Displaying File Types:
+List files with file type indicators:
+ls -F
+
+
+List files with colorized output:
+ls --color
+
+
+Recursion for Subdirectories:
+List files in all subdirectories recursively:
+ls -R
+
+Displaying User and Group Names:
+List files with user and group names instead of IDs:
+ls -l --human-readable
+
+
+
+2- pwd
+Print working directory command in Linux
+ex:
+$ pwd
+/Users/mahmouddabbbagh/moody/Linux/fondamental
+
+3- cd <folder>
+navigate through directories
+(enter folder)
+
+* cd ..
+go back one step
+
+* cd
+go to the root(top) path
+
+Change to the previous directory:
+cd -
+
+4- mkdir
+create directories in Linux
+ex:
+* mkdir newFolder
+
+Create multiple directories:
+mkdir dir1 dir2 dir3
+
+Create nested directories:
+mkdir -p /path/to/nested/directory
+
+
+Create multiple directories with a common prefix:
+mkdir prefix_{1,2,3}
+
+Create directories with custom permissions:
+mkdir -m 755 custom_directory
+
+5- touch
+create empty file in Linux
+ex:
+* touch newFile.html
+
+Create multiple empty files:
+touch file1.txt file2.txt file3.txt
+
+Create a file with a specified path:
+touch /path/to/newfile.txt
+
+
+Update access and modification timestamps:
+touch existingfile.txt
+
+Create files with a specific timestamp:
+touch -t 202201011200.00 file.txt
+
+Create files with a specific timestamp from a file:
+touch -r referencefile.txt newfile.txt
+
+Update timestamp of a file to the current time:
+touch -c existingfile.txt
+
+6- mv
+Move a file to another directory:
+ex:
+mv file.txt /path/to/destination/
+
+Rename a file:
+ex:
+mv oldfile.txt newfile.txt
+
+Move multiple files to a directory:
+ex:
+mv file1.txt file2.txt /path/to/destination/
+
+Move a directory and its contents:
+ex:
+mv directory1 /path/to/destination/
+
+Move a directory and rename it at the same time:
+ex:
+mv old_directory/ new_directory/
+
+
+7-cp
+Copy a file to another location:
+ex:
+cp file.txt /path/to/destination/
+
+
+Copy a file and rename it:
+ex:
+cp oldfile.txt newfile.txt
+
+
+Copy multiple files to a directory:
+ex:
+cp file1.txt file2.txt /path/to/destination/
+
+
+Copy a directory and its contents:
+ex:
+cp -r directory1 /path/to/destination/
+
+
+Copy with interactive confirmation:
+ex:
+cp -i file.txt /path/to/destination/
+
+
+Copy with preservation of metadata (timestamps, etc.):
+ex:
+cp -p file.txt /path/to/destination/
+
+
+Copy a directory and its contents, preserving metadata:
+ex:
+cp -rp directory1 /path/to/destination/
+
+
+Force copy, overwrite existing files without confirmation:
+ex:
+cp -f file.txt /path/to/destination/
+
+8- rm
+Remove a file:
+ex:
+rm file.txt
+
+
+Remove multiple files:
+ex:
+rm file1.txt file2.txt
+
+
+Remove a directory and its contents:
+ex:
+rm -r directory1
+
+
+Remove a directory with interactive confirmation:
+ex:
+rm -ri directory1
+
+
+Force remove, no confirmation:
+ex:
+rm -f file.txt
+
+9- ln
+Create a hard link:
+
+ln file.txt hardlink.txt
+
+Hard Link:
+A hard link in Linux is a mechanism that associates multiple filenames with the same inode on a file system.
+An inode is a data structure on a filesystem that stores information about a file,
+except its name and its actual data. Hard links provide multiple directory entries (filenames)
+to access the same set of data blocks on the disk.
+
+10-cat:
+Display the Contents of a File
+ex:
+cat filename.txt
+
+
+Display the contents of multiple files:
+ex:
+cat file1.txt file2.txt
+
+
+Concatenate and Create a New File:
+Concatenate files and create a new file:
+ex:
+cat file1.txt file2.txt > combined.txt
+
+
+Append the content of a file to another file:
+ex:
+cat file1.txt >> existingfile.txt
+
+11- clear:
+Clear the terminal display
