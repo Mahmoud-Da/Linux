@@ -2,5 +2,8 @@ lesson1:
 ls, pwd, cd, mkdir, touch, mv, cp, rm, ln, cat, clear
 
 
+lesson2:
+echo, less, man, uname, whoami, tar, grep, head, tail 
+
 Quote:
 - https://www.digitalocean.com/community/tutorials/linux-commands?fbclid=IwAR1n04Jesstn-otCbB-GEazkAi4GNTu8-xNyrkDJwkqHpV4yaUoHuyvnMRU
