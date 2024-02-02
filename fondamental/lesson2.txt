@@ -1,0 +1,268 @@
+1- echo
+The echo command is commonly used in command-line interfaces to display messages or variables
+Displaying a simple message:
+
+ex:
+echo "Hello, World!"
+Using variables:
+
+ex:
+name="John"
+echo "My name is $name"
+Displaying the current date and time:
+
+ex:
+echo "Current date and time: $(date)"
+Redirecting output to a file:
+
+ex:
+echo "This message is saved in a file." > output.txt
+Appending to a file:
+
+ex:
+echo "This message is appended to the file." >> output.txt
+Displaying special characters:
+
+ex:
+echo "This is a line with \t tab \n and a new line."
+
+
+2- less
+The less command is used in Unix and Linux systems to view the contents of a text file one screen at a time.
+Here are some examples:
+
+Viewing a text file:
+ex:
+less filename.txt
+Replace filename.txt with the actual name of the text file you want to view. Once you're in less, you can navigate using arrow keys, and you can exit by pressing q.
+
+Searching within a file:
+ex:
+less filename.txt
+Inside less, you can search for a specific term by typing / followed by the search term and pressing Enter. To find the next occurrence, press n.
+
+Display line numbers:
+ex:
+less -N filename.txt
+This command displays line numbers alongside the content of the file.
+
+View multiple files:
+ex:
+less file1.txt file2.txt
+You can provide multiple file names as arguments to less to view their contents one after the other.
+
+View compressed files:
+ex:
+less filename.gz
+less can also decompress and display the content of compressed files (like gzip-compressed files) on-the-fly.
+
+These are just a few examples of how you can use the less command.
+ It's a versatile tool for quickly examining the contents of text files in the terminal
+
+3- man
+The man command in Unix and Linux systems is used to display the manual (documentation) pages for various commands and utilities. 
+
+ex:
+man ls
+This command displays the manual page for the ls command, which is used to list files and directories in a directory. When you run this command, you'll see a detailed explanation of how to use ls, including its various options and arguments. You can navigate through the manual page using the arrow keys, and to exit, you can press q.
+
+You can replace ls with the name of any other command to view its manual page. For example:
+
+ex:
+man grep
+
+3- uname
+show the karnel information of the machine
+
+4- whoami
+The whoami command is used in Unix and Linux systems to display the username of the current user.
+
+ex:
+whoami
+john
+
+5- tar
+The tar command in Unix and Linux is used for archiving files and directories. It can create a compressed or uncompressed archive file, which can be easily transported, stored, or shared. Here are some examples of using the tar command:
+
+Create a tar archive:
+
+To create a tar archive of a directory:
+
+ex:
+tar -cvf archive.tar directory/
+-c: Create a new archive.
+-v: Verbose mode, display the progress of the operation.
+-f: Specify the name of the archive file.
+Create a compressed tar archive (gzip):
+
+To create a compressed tar archive using gzip:
+
+ex:
+tar -cvzf archive.tar.gz directory/
+-z: Compress the archive using gzip.
+Extract files from a tar archive:
+
+To extract files from a tar archive:
+
+ex:
+tar -xvf archive.tar
+-x: Extract files from an archive.
+Extract files from a compressed tar archive (gzip):
+
+To extract files from a compressed tar archive:
+
+ex:
+tar -xvzf archive.tar.gz
+-z: Decompress the archive using gzip.
+View the contents of a tar archive:
+
+To display the contents of a tar archive:
+
+ex:
+tar -tvf archive.tar
+
+
+6- grep
+The grep command in Unix and Linux is used for searching text patterns in files. Here are some examples of using the grep command:
+
+Basic pattern search:
+
+To search for a specific pattern (e.g., "example") in a file:
+
+ex:
+grep "example" filename.txt
+Case-insensitive search:
+
+To perform a case-insensitive search:
+
+ex:
+grep -i "pattern" filename.txt
+The -i option makes the search case-insensitive.
+
+Search for a pattern in multiple files:
+
+To search for a pattern in multiple files:
+
+ex:
+grep "pattern" file1.txt file2.txt
+Display line numbers along with matching lines:
+
+To show line numbers along with matching lines:
+
+ex:
+grep -n "pattern" filename.txt
+The -n option displays line numbers.
+
+Display only the count of matching lines:
+
+To count the number of lines that match a pattern:
+
+ex:
+grep -c "pattern" filename.txt
+Recursive search in directories:
+
+To search for a pattern recursively in all files within a directory and its subdirectories:
+
+ex:
+grep -r "pattern" /path/to/directory
+The -r option enables a recursive search.
+
+Search for lines not containing a pattern:
+
+To display lines that do not contain a specific pattern:
+
+ex:
+grep -v "pattern" filename.txt
+The -v option inverts the match.
+
+These are just a few examples, and grep has many more options for advanced pattern matching. Refer to the manual pages (man grep) for more details and options.
+
+7- head
+The head command in Unix and Linux is used to display the beginning lines of a text file. Here are some examples of using the head command:
+
+Display the first 10 lines of a file:
+
+ex:
+head filename.txt
+By default, head displays the first 10 lines of the specified file.
+
+Display a specific number of lines:
+
+To display a specific number of lines (e.g., 5 lines):
+
+ex:
+head -n 5 filename.txt
+The -n option allows you to specify the number of lines.
+
+Display lines from multiple files:
+
+To display the first 10 lines from multiple files:
+
+ex:
+head file1.txt file2.txt
+head can take multiple filenames as arguments.
+
+Display the first part of a piped command output:
+
+To display the first 5 lines of the output from another command (e.g., ls):
+
+ex:
+ls -l | head -n 5
+It shows the first 5 lines of the output from ls -l.
+
+Display the first part of a file with headers:
+
+To display the first 15 lines of a file with headers (showing the filename):
+
+ex:
+head -n 15 -v filename.txt
+The -v option prints headers at the beginning of each file section.
+
+8- tail
+The tail command in Unix and Linux is used to display the last part of a text file. Here are some examples of using the tail command:
+
+Display the last 10 lines of a file:
+
+ex:
+tail filename.txt
+By default, tail displays the last 10 lines of the specified file.
+
+Display a specific number of lines:
+
+To display a specific number of lines (e.g., 5 lines):
+
+ex:
+tail -n 5 filename.txt
+The -n option allows you to specify the number of lines.
+
+Display lines from multiple files:
+
+To display the last 10 lines from multiple files:
+
+ex:
+tail file1.txt file2.txt
+tail can take multiple filenames as arguments.
+
+Display the last part of a piped command output:
+
+To display the last 5 lines of the output from another command (e.g., ls):
+
+ex:
+ls -l | tail -n 5
+It shows the last 5 lines of the output from ls -l.
+
+Follow a file in real-time (like tail -f):
+
+To continuously display the last lines of a file as it's updated:
+
+ex:
+tail -f filename.txt
+The -f option (follow) allows you to monitor the file in real-time.
+
+Display the last part of a file with headers:
+
+To display the last 15 lines of a file with headers (showing the filename):
+
+ex:
+tail -n 15 -v filename.txt
+The -v option prints headers at the beginning of each file section.
