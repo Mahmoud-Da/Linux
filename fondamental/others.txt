@@ -1,0 +1,19 @@
+Pipe(|):
+ex: 
+command1 | commnad2
+take the output of the command1 and use it as input in the command2
+ex:
+ls | grep "fondamental"
+
+And logical Opperater(&&):
+command1 && commnad2
+to excute the command1 first  then excute the command2
+ex:
+cd fondamental && touch file.txt
+navigate fondamental first then create file.txt
+
+
+How To Write loop in Linux:
+for ((i = o; i<= 1000; i++)); do
+  echo "This message is saved in a file$i" >> output.txt
+done
