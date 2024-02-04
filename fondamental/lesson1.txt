@@ -79,6 +79,8 @@ ex:
 Create multiple directories:
 mkdir dir1 dir2 dir3
 
+ 
+TODO: check it in internet
 Create nested directories:
 mkdir -p /path/to/nested/directory
 
@@ -155,7 +157,7 @@ Copy a directory and its contents:
 ex:
 cp -r directory1 /path/to/destination/
 
-
+TODO: check what (interactive confirmation) means
 Copy with interactive confirmation:
 ex:
 cp -i file.txt /path/to/destination/
@@ -200,6 +202,7 @@ Force remove, no confirmation:
 ex:
 rm -f file.txt
 
+TODO: check what is hard link
 9- ln
 Create a hard link:
 

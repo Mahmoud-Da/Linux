@@ -72,7 +72,7 @@ ex:
 man grep
 
 3- uname
-show the karnel information of the machine
+show the karnel(core of OS[Operate System]) information of the machine
 
 4- whoami
 The whoami command is used in Unix and Linux systems to display the username of the current user.
