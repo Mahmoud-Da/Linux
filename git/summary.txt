@@ -1,0 +1,13 @@
+Source control
+files status:
+U -> untraking (new file)
+M -> modification (modify file)
+D -> Deleted
+
+
+
+git 
+local   ->    staging      ->    gitHub
+        ->     git add .   ->  git commit -m "commit-name"
+
+commit -> screen shot
