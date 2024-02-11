@@ -6,8 +6,24 @@ D -> Deleted
 
 
 
-git 
+git: 
 local   ->    staging      ->    gitHub
-        ->     git add .   ->  git commit -m "commit-name"
+        ->     git add .   ->  1- git commit -m "commit-name"
+                               2- git push origin branch-name
 
+gitHub:
+create PR(Pull Request) 
 commit -> screen shot
+
+master/main 
+branch (v1, v2)
+
+git branch (check the current branch)
+checkout (change branch)
+git branch "name" (create new branch)
+
+Steps:
+1- go to repository (Linux)
+2- go to issues(Tasks)
+3- git checkout -b 
+
